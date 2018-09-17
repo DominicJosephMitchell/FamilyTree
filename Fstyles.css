@@ -5,82 +5,111 @@ table {
 table, th, td {
     width: 100%;
     height: 50%;
-    border: 1px solid black;
+    border: 1px solid darkgreen;
     padding: 0px;
     text-align: left;
 }
 
 body {
-    background-color: tan;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 1.50em;
-    background-image: url ("bgdesert.jpg");
+    font-size: 1em;
+    background: url(imgf/oceantree.png);
+    color: rgb(60, 0, 100);
 }
 
-header {
-    color: bisque;
-    background-color: saddlebrown;
+ header {
+    color: rgb(60, 0, 100);
+    background: linear-gradient(bottom, rgba(0, 0, 0, .1), rgba(0, 0, 0, 1));
+    background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, .1), rgba(0, 0, 0, 1));
+    background: -moz-linear-gradient(bottom, rgba(0, 0, 0, .1), rgba(0, 0, 0, 1));
     width: 100%;
-    height: 25%;
-    padding: 20px;
-    font-family: Verdana, sans-serif;
-}
-
-     /* Top Nav */
-
-    .topnav a {
-        color: white;
-        padding: 0px;
-        text-decoration: none;
-}
-
-footer {
-    color: bisque;
-    background-color: saddlebrown;
-    width: 100%;
-    height: 20%;
+    height: 10%;
     padding: 0px;
     font-family: Verdana, sans-serif;
+    text-align: center;
+    margin: center;
+ }
+ 
+footer {
+    background: linear-gradient(bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, .1));
+    background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, .1));
+    background: -moz-linear-gradient(bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, .1));
+    position: fixed;
+    bottom:0px;
+    width: 100%;
 }
 
     /* Top Nav */
 
     .topnav a {
-        color: white;
+        color: rgb(60, 0, 100);
         padding: 0px;
         text-decoration: none;
 }
 
+h4 {
+    text-align: center;
+    color: rgb(100, 0, 22);
+    font-size: 7em;
+} 
+
 h1 {
     text-align: center;
-    margin: 10px;
+    color: rgb(60, 0, 100);
+    font-size: 3em;
+}
+
+h2 {
+    text-align: center;
+    font-size: 7em;
+    color: rgb(48, 100, 0);
+
 }
 
 h3 {
     text-align: center;
+    color: rgb(60, 0, 100);
     margin: 10px;
+    font-size: 3em;
 }
+
 
 
 .sign-info {
     text-align: center;
     margin: 10px;
+    color: rgb(60, 0, 100);
+
 }
 
 .login-info {
     text-align: center;
     margin: 10px;
-    color: black;
+    color: rgb(60, 0, 100);
 }
 
 #login-button {
     text-align: center;
     margin: 10px;
+    color: rgb(60, 0, 100);
 }
 
-/* centr pic profile page */
-.img-src {
-    text-align: center;
-    margin: 10px;
+/* /* unvisited link* */
+a:link {
+    color: orange;
 }
 
+/* visited link */
+a:visited {
+    color: orangered;
+}
+
+/* mouse over link */
+a:hover {
+    color: gold;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+} 
