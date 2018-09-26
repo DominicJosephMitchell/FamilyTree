@@ -2,11 +2,19 @@
 <html lang="en">
 
 <head>
-    <title>My Family Tree</title>
+    <title>MyFamilyTreeLoginSignup</title>
     <link rel="stylesheet" href="Freset.css">
     <link rel="stylesheet" href="Fstyles.css">
     <script src="template.js" type="text/javascript"></script>
 </head>
+
+<!-- <style>
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+</style> -->
 
 <body>
     <div>
@@ -14,60 +22,60 @@
             <iframe src="Fheader.html" height="25%" width="100%" scrolling="no"></iframe>
         </header>
     </div>
+
     <div>
-        <style>
-            img {
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-            }
-        </style>
-
-        <h1>Log In or Sign Up</h1>
-        <img src="imgf/img_tree.jpg" alt="img_book" height="10%" width="25%">
+        <h2>Log In or Sign Up</h2>
+        <!-- <img src="imgf/bgdesert.jpg" alt="img_bgdesert" height="10%" width="25%"> -->
     </div>
-
+    <br>
 
     <section id="login-page">
         <br>
 
         <!-- Email HTML code -->
-        <div class="login-info">
-            <label for="email"></label>
-            <input id="email" type="email" placeholder="Enter UserName click here" />
-            <br>
-        </div>
+        <form id="LoginForm">
+            <div class="login-info">
+                <label for="Email"></label>
+                <input id="Email" type="Email" placeholder="Enter Email click here" />
+                <br>
+            </div>
 
-        <!-- Passord HTML code -->
-        <div class="login-info">
-            <label for="Password"></label>
-            <input id="Password" type="Password" placeholder="Enter Password click here" />
-            <br>
-            <br>
-            <!-- Row 1 -->
+            <!-- Passord HTML code -->
+            <div class="login-info">
+                <label for="Password"></label>
+                <input id="Password" type="Password" placeholder="Enter Password click here" />
+            </div>
+            <div>
+                <h1><input id="login button" type="submit" value="Log In click here" /></h1>
+            </div>
+        </form>
+
+        <!-- Row 1 -->
+        <div>
             <tr>
                 <th>
-                    <td colspan="2">
-                        <br>
+                <td colspan="2">
+                    <br>
 
-                        <strong/>
-                        <h></h>
-                        </strong>
-                        <input Id="login button" type="button" value="Log In click here" />
-                    </td>
+                    <strong>
+                        <h1></h1>
+                    </strong>
+                    <!-- <input Id="login button" type="submit" value="Log In click here" /> -->
+                </td>
                 </th>
             </tr>
         </div>
-
         <!-- Sign Up HTML code-->
         <div class="sign-info">
-            <input Id="Sign Up button" type="button" value="Sign Up click here" />
+            <a href="Fsignup.html" target="_parent">
+                <input Id="Sign Up button" type="button" value="Sign Up click here" />
         </div>
 
         <!--Forgot My Password HTML code-->
         <div class="login-info">
             <a href="Fforgotpasswordusername.html" target="_parent">
-                <h3 style="color:black;">Forgot Password ???</h3>
+                <input Id="Forgot Password ???" type="button" value="Forgot Password ???" />
+
             </a>
         </div>
     </section>
@@ -75,6 +83,58 @@
     <footer>
         <iframe class="footer" src="Ffooter.html" height="40" width="100%" scrolling="no"></iframe>
     </footer>
+
+    <script>
+        // debugger;
+        // window.onload = function(){
+        //     document.getElementById("loginForm").addEventListener("submit", function (e) {
+        //         // debugger;
+        //         e.preventDefault();
+        //         login();
+        //     });
+        // }
+
+        window.onload = function () {
+            logEvent = document.getElementById("LoginForm");
+            logEvent.addEventListener("submit", function (e) {
+                e.preventDefault();
+                login();
+            });
+        }
+
+
+        var login = function () {
+            const user = {
+                email: document.forms["LoginForm"]["Email"].value,
+                password: document.forms["LoginForm"]["Password"].value
+            }
+
+            // document.write(JSON.stringify(user));
+            console.log(JSON.stringify(user));
+
+            // Validate user
+            var profiles = JSON.parse(window.localStorage.profiles);
+
+            for (let index = 0; index < profiles.length; index++) {
+                const profile = profiles[index];
+
+                if ((profile.email == user.email) && (profile.password == user.password)) {
+                    window.sessionStorage.loggedIn = true;
+                    window.sessionStorage.loggedInEmail = profile.email;
+
+                    alert("Valid User");
+                    window.location.href = "Ffamilyrelations.html";
+
+                    break;
+                }
+            }
+
+            alert("Invalid User");
+
+            return false;
+        }
+    </script>
+
 </body>
 
 </html>

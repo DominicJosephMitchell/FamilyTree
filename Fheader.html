@@ -1,40 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head></head>
+<head>
+        <title>MyFamilyTreeHeader</title>
+</head>
 
 <body>
+    <style>
+        /* /* unvisited link* */
+        a:link {
+            color: orange;
+        }
+
+        /* visited link */
+        a:visited {
+            color: orangered;
+        }
+
+        /* mouse over link */
+        a:hover {
+            color: purple;
+        }
+
+        /* selected link */
+        a:active {
+            color: blue;
+        }
+    </style>
     <div>
         <header>
-            <style>
-                header {
-                    color: bisque;
-                    background-color: saddlebrown;
-                    width: 100%;
-                    height: 25%;
-                    padding: 0px;
-                }
-            </style>
-            
             <h1>My Family Tree</h1>
             <div class="topnav"></div>
-            <ul>
-                <li>
-                    <a href="Fhome.html" target="_parent">Home</a>
-                </li>
-                <li>
-                    <a href="Flogin.html" target="_parent">LogIn/SignUp</a>
-                </li>
-                <li>
-                    <a href="Fprofile.html" target="_parent">Profile</a>
-                </li>
-                <li>
-                    <a href="Fforgotpasswordusername.html" target="_parent">???</a>
-                </li>
-                <li>
-                    <a href="Flogout.html" target="_parent">LogOut</a>
-                </li>
-            </ul>
+            <h2>
+                <span style="margin-left:0px;"><a href="Ffamilyrelations.html" target="_parent">Family Members</a></span>
+                <span style="margin-left:200px;"><a href="Flogin.html" target="_parent">LogIn/SignUp</a></span>
+                <span style="margin-left:200px;"><a href="Fprofile.html" target="_parent">Profile</a></span>
+                <span style="margin-left:200px;"><a href="Fforgotpasswordusername.html" target="_parent">???</a></span>
+                <span style="margin-left:200px;"><a href="Flogout.html" target="_parent">LogOut</a></span>
+            </h2>
         </header>
     </div>
 </body>
