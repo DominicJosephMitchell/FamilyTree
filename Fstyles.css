@@ -37,6 +37,7 @@ footer {
     position: fixed;
     bottom:0px;
     width: 100%;
+<<<<<<< HEAD
 }
 
     /* Top Nav */
@@ -57,6 +58,8 @@ h1 {
     text-align: center;
     color: gold;
     font-size: 3em;
+=======
+>>>>>>> 5b4163e32808d499bfbf6335562272f1dbf9343a
 }
 
 h2 {
@@ -64,6 +67,7 @@ h2 {
     font-size: 7em;
     color: gold;
 
+<<<<<<< HEAD
 }
 
 h3 {
@@ -71,11 +75,40 @@ h3 {
     color: gold;
     margin: 10px;
     font-size: 1.5em;
+=======
+    .topnav a {
+        color: rgb(60, 0, 100);
+        padding: 0px;
+        text-decoration: none;
+}
+
+h4 {
+    text-align: center;
+    color: rgb(100, 0, 22);
+    font-size: 7em;
+} 
+
+h1 {
+    text-align: center;
+    color: rgb(60, 0, 100);
+    font-size: 3em;
+}
+
+h2 {
+    text-align: center;
+    font-size: 7em;
+    color: rgb(48, 100, 0);
+
+>>>>>>> 5b4163e32808d499bfbf6335562272f1dbf9343a
 }
 
 h5 {
     text-align: center;
+<<<<<<< HEAD
     color: darkmagenta;
+=======
+    color: rgb(60, 0, 100);
+>>>>>>> 5b4163e32808d499bfbf6335562272f1dbf9343a
     margin: 10px;
     font-size: 3em;
 }
@@ -113,7 +146,11 @@ a:visited {
 
 /* mouse over link */
 a:hover {
+<<<<<<< HEAD
     color: purple;
+=======
+    color: gold;
+>>>>>>> 5b4163e32808d499bfbf6335562272f1dbf9343a
 }
 
 /* selected link */
