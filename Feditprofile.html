@@ -2,11 +2,7 @@
 <html lang="en">
 
 <head>
-<<<<<<< HEAD
     <title>MyFamilyTreeEditProfile</title>
-=======
-    <title>MyStory - Edit Profile</title>
->>>>>>> 5b4163e32808d499bfbf6335562272f1dbf9343a
     <link rel="stylesheet" href="Freset.css">
     <link rel="stylesheet" href="Fstyles.css">
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
@@ -14,7 +10,6 @@
 </head>
 
 <body>
-<<<<<<< HEAD
     <div>
         <header>
             <iframe src="Fheader.html" height="25%" width="100%" scrolling="no"></iframe>
@@ -61,64 +56,13 @@
                 </div>
             </form>
         </h5>
-=======
-    <header>
-        <iframe src="Fheader.html" width="100%"></iframe>
-    </header>
-    <div class="content">
-        <h1 class="title">Edit Profile</h1>
-        <form id="editProfileForm">
-            <!-- First Name -->
-            <div class="profile-info">
-                <label for="Name">Name</label>
-                <input id="Name" type="text" placeholder="Dominic Joseph Mitchell" />
-            </div>
-            <!-- Date of Birth -->
-            <div class="profile-info">
-                <label for="Date=of-Birth">Date of Birth</label>
-                <input id="Date-of-Birth" type="text" placeholder="Date of Birth" />
-            </div>
-
-            <div class="buttons">
-                <input id="update-button" class="button" type="submit" value="Update" />
-            </div>
-        </form>
->>>>>>> 5b4163e32808d499bfbf6335562272f1dbf9343a
     </div>
     <footer>
         <iframe class="footer" src="footer.html" width="100%"></iframe>
     </footer>
 
-<<<<<<< HEAD
     <script src="./src/profiles.js"></script>
     <script src="./src/edit-profile.js"></script>
-=======
-    <script>
-        document.getElementById("editProfileForm").addEventListener("submit", function (e) {
-            if (e.preventDefault) { e.preventDefault(); }
-
-            editProfileForm();
-        });
-
-        var editProfileForm = function () {
-            const profile = {
-                Name: document.forms["editProfileForm"]["Name"].value,
-                DateofBirth: document.forms["editProfileForm"]["Date-of-Birth"].value,
-            };
-
-            var loadProfile = function () {
-                var profiles = window.localStorage.profiles ? JSON.parse(window.localStorage.profiles) : [];
-                const profile = {
-                    Name: profiles.Name,
-                    DateOfBirth: profiles.DateofBirth
-                };
-
-            // document.write(JSON.stringify(profile));
-
-            return false;
-        }
-    </script>
->>>>>>> 5b4163e32808d499bfbf6335562272f1dbf9343a
 </body>
 
 </html>

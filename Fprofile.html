@@ -2,11 +2,7 @@
 <html lang="en">
 
 <head>
-<<<<<<< HEAD
     <title>MyFamilyTreeProfile</title>
-=======
-    <title>MyFamilyTree</title>
->>>>>>> 5b4163e32808d499bfbf6335562272f1dbf9343a
     <link rel="stylesheet" href="Freset.css">
     <link rel="stylesheet" href="Fstyles.css">
     <!-- <link rel="stylesheet" href="sign-up.css"> -->
@@ -16,7 +12,6 @@
 </head>
 
 <body>
-<<<<<<< HEAD
     <aside>
         <header>
             <iframe src="Fheader.html" height="25%" width="100%" scrolling="no"></iframe>
@@ -24,21 +19,6 @@
     </aside>
     <div class="content">
         <h2 class="title">Profile</h2>
-=======
-    <div>
-        <header>
-            <iframe src="Fheader.html" height="10%" width="100%" scrolling="no"></iframe>
-        </header>
-    </div>
-
-    <div>
-        <h1>Profile</h1>
-        <!-- <img src="imgf/img_tree.jpg" alt="img_book" height="10%" width="25%"> -->
-    </div>
-
-    <section id="Profile-Page">
-
->>>>>>> 5b4163e32808d499bfbf6335562272f1dbf9343a
         <h1>Create a Profile by filling in the spaces below</h1>
         <h1>Then click Save:</h1>
         <!-- <div>
@@ -84,7 +64,6 @@
         <iframe class="footer" src="Ffooter.html" height="40" width="100%" scrolling="no"></iframe>
     </footer>
 
-<<<<<<< HEAD
     <script>
         window.onload = function (e) {
             debugger;
@@ -102,58 +81,6 @@
     </script>
     <script src="./src/profiles.js"></script>
 
-=======
-        <!-- Name HTML code -->
-        <div class="login-info ">
-            <label for="Name "></label>
-            <input id="First Name: " type="Name " placeholder="Enter Name here ">
-        </div>
-        <!-- DateOfBirthHTML code -->
-        <div class="login-info ">
-            <label for="DateOfBirth "></label>
-            <input id="DateOfBirth: " type="DateOfBirth " placeholder="Enter DateOfBirth here ">
-        </div>
-        <h1>
-            <div>
-                <button type="submit " onclick="alert( 'Edit Profile') " height="20% " width="10% ">Edit
-                    Profile</button>
-            </div>
-            <div>
-                <button type="button " onclick="alert( 'Delete Profile') " height="20% " width="10% ">Delete
-                    Profile</button>
-            </div>
-            <div>
-                <button type="button " onclick="alert( 'Create Profile') " height="20% " width="10% ">Save!</button>
-            </div>
-        </h1>
-    </section>
-    <footer>
-        <iframe class="footer" src="Ffooter.html" height="40" width="100%" scrolling="no"></iframe>
-    </footer>
-
-    <script>
-            window.onload = function (e) {
-                if (window.sessionStorage.loggedIn !== "true") {
-                    alert("You need to be logged in first.");
-                    window.location.href = "Flogin.html";
-                }
-    
-                loadProfile();
-            };
-    
-            var loadProfile = function () {
-                var profiles = window.localStorage.profiles ? JSON.parse(window.localStorage.profiles) : [];
-                const profile = {
-                    Name: profiles.Name,
-                    DateOfBirth: profiles.DateofBirth
-                };
-    
-                document.getElementById("Name").innerHTML = profile.Name;
-                document.getElementById("DateOfBirth").innerHTML = profile.DateOfBirth;
-            }
-        </script>
-    
->>>>>>> 5b4163e32808d499bfbf6335562272f1dbf9343a
 </body>
 
 </html>
