@@ -2,61 +2,49 @@
 <html lang="en">
 
 <head>
-    <title>MyFamilyTreeProfile</title>
-    <link rel="stylesheet" href="Freset.css">
-    <link rel="stylesheet" href="Fstyles.css">
-    <!-- <link rel="stylesheet" href="sign-up.css"> -->
+    <title>FamilyTree - Login</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles.css">
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous"> -->
-    <script src="template.js" type="text/javascript"></script>
 </head>
 
 <body>
-    <aside>
-        <header>
-            <iframe src="Fheader.html" height="25%" width="100%" scrolling="no"></iframe>
-        </header>
-    </aside>
-    <div class="content">
-        <h2 class="title">Profile</h2>
-        <h1>Create a Profile by filling in the spaces below</h1>
-        <h1>Then click Save:</h1>
-        <!-- <div>
-            <style>
-                img {
-                        display: block;
-                        margin-left: auto;
-                        margin-right: auto;
-                        margin-top: auto;
-                        margin-bottom: 7.9%;
-                    }
-                </style>
-            <img src="imgF/img_oceantree.png" alt="img_oceantree.png">
-        </div> -->
-        <form id="profile">
+    <header>
+        <iframe src="header.html" width="100%"></iframe>
+    </header>
+    <div class="container">
+        <section>
+            <h1 class="title">Profile</h1>
             <h5>
+                <!-- First Name -->
                 <div>
-                    <label for="name">Name</label>
+                    <label for="first-name">First Name</label>
                     <span id="first-name"></span>
                 </div>
                 <!-- Last Name -->
                 <div>
-                    <label for="email">Email</label>
+                    <label for="last-name">Last Name</label>
                     <span id="last-name"></span>
                 </div>
                 <!-- Email -->
                 <div>
-                    <label for="password">Password</label>
-                    <span id="password"></span>
+                    <label for="email">Email</label>
+                    <span id="email"></span>
+                </div>
+                <!-- DOB -->
+                <div>
+                    <label for="DOB">Date of Birth</label>
+                    <span id="dob"></span>
                 </div>
                 <div class="buttons">
                     <a href="edit-profile.html" class="btn btn-primary">Edit</a>
                 </div>
             </h5>
-        </form>
+        </section>
     </div>
     <footer>
-        <iframe class="footer" src="Ffooter.html" height="40" width="100%" scrolling="no"></iframe>
+        <iframe class="footer" src="footer.html" width="100%"></iframe>
     </footer>
 
     <script>
@@ -75,7 +63,6 @@
         };
     </script>
     <script src="./src/profiles.js"></script>
-
 </body>
 
 </html>

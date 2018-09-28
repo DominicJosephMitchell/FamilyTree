@@ -13,7 +13,7 @@ table, th, td {
 body {
     font-family: 'Times New Roman', Times, serif;
     font-size: 1em;
-    background: url(imgf/oceantree.png);
+    background: url(img/oceantree.png);
     color: rgb(60, 0, 100);
 }
 
@@ -79,7 +79,6 @@ h5 {
     margin: 10px;
     font-size: 3em;
 }
-
 
 
 .sign-info {

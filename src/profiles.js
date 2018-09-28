@@ -2,6 +2,7 @@
  * 
  */
 var loadProfile = function () {
+    // debugger;
     let profile = null;
     let profileIndex = null;
 
@@ -34,10 +35,10 @@ var loadProfile = function () {
 var displayProfile = function (profile) {
     // Display my profile if found
     if (profile != null) {
-        document.getElementById("first-name").value = profile.firstName;
-        document.getElementById("last-name").value = profile.lastName;
-        document.getElementById("email").value = profile.email;
-        document.getElementById("dob").value = profile.dob;
+        document.getElementById("first-name").innerHTML = profile.firstName;
+        document.getElementById("last-name").innerHTML = profile.lastName;
+        document.getElementById("email").innerHTML = profile.email;
+        document.getElementById("dob").innerHTML = profile.dob;
     } else {  // Otherwise display error message and redirect user to login screen
         alert("You don't have a profile buddy!");
         window.location.href = "./sign-up.html";
@@ -63,7 +64,7 @@ var saveProfile = function (results) {
         const confirmPassword = document.forms["edit-profile-form"]["confirm-password"] ? document.forms["edit-profile-form"]["confirm-password"].value : null;
         const profiles = window.localStorage.profiles ? JSON.parse(window.localStorage.profiles) : [];
 
-        debugger;
+        // debugger;
 
         if (updatedProfile.password && results.profile.password != updatedProfile.password && profile.password != confirmPassword) {
             alert("Password must be the same as Confirmation Password.");
