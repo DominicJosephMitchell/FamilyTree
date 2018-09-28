@@ -7,12 +7,8 @@ document.getElementById("signUpForm").addEventListener("submit", function (e) {
 
 var signUp = function () {
     const profile = {
-        firstName: "",
-        lastName: "",
-        alias: document.forms["signUpForm"]["alias"].value,
+        name: document.forms["signUpForm"]["name"].value,
         email: document.forms["signUpForm"]["email"].value,
-        gender: document.forms["signUpForm"]["gender"].value,
-        dob: document.forms["signUpForm"]["dob"].value,
         password: document.forms["signUpForm"]["password"].value,
     };
     const confirmPassword = document.forms["signUpForm"]["confirm-password"].value
@@ -44,7 +40,7 @@ var signUp = function () {
         profiles.push(profile);
         window.localStorage.profiles = JSON.stringify(profiles);
         window.sessionStorage.loggedIn = profile.email;
-        window.location.href = "./Findex.html";
+        window.location.href = "./Ffamilyrelations.html";
     }
 
     return false;
